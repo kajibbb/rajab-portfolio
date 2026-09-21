@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Kursus - RuangBelajar</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="courses.css">
+    <link rel="stylesheet" href="course-detail.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <h1>RuangBelajar</h1>
+            </div>
+
+            <div class="navbar-center">
+                <ul class="nav-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="courses.html" class="active">Kursus Saya</a></li>
+                    <li><a href="notifications.html">Notifikasi</a></li>
+                    <li><a href="help.html">Bantuan</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-right">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Cari materi, dokumen...">
+                    <button class="search-btn">Cari</button>
+                </div>
+
+                <div class="navbar-icons">
+                    <a href="profile.html" class="profile-icon" title="Profil">RS</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="course-detail-container">
+        <!-- Course Header Information (mimicking course-card) -->
+        <div class="course-card" style="margin-bottom: 25px;">
+            <a href="courses.html"
+                style="border: 1px solid; padding: 10px; width: 18%; border-radius: 10px; color: white; background-color: #6366F1; text-decoration: none; margin-bottom: 15px; display: inline-block; font-weight: 600;">
+                Kembali ke Kursus Saya</a>
+
+            <div class="course-header" style="border-bottom: none; padding-bottom: 0;">
+                <h2 style="color: #111111; margin-bottom: 5px; font-size: 24px;">Pemrograman Web</h2>
+                <span class="course-status active" style="align-self: flex-start; margin-top: 5px;">Aktif</span>
+            </div>
+            <div class="course-details" style="margin-top: 15px;">
+                <p><strong>Instruktur:</strong> Dr. Budi Santoso</p>
+                <p><strong>Kelas:</strong> 9A</p>
+            </div>
+        </div>
+
+        <!-- Session Content Area -->
+        <div id="tab-session" class="tab-pane active">
+            <!-- Session Sub-tabs -->
+            <div class="session-tabs-container">
+                <button class="session-tab completed">Session 1</button>
+                <button class="session-tab completed">Session 2</button>
+                <button class="session-tab completed">Session 3</button>
+                <button class="session-tab completed">Session 4</button>
+                <button class="session-tab completed">Session 5</button>
+                <button class="session-tab completed">Session 6</button>
+                <button class="session-tab completed">Session 7</button>
+                <button class="session-tab completed">Session 8</button>
+                <button class="session-tab completed">Session 9</button>
+                <button class="session-tab completed">Session 10</button>
+                <button class="session-tab completed">Session 11</button>
+                <button class="session-tab completed">Session 12</button>
+                <button class="session-tab active">Session 13</button>
+            </div>
+
+            <!-- Session Detail View -->
+            <div class="session-detail-view">
+                <div class="session-main-content">
+                    <h3 class="session-title">13 Web Service [L]</h3>
+
+                    <div class="content-section">
+                        <h4>Learning Outcome</h4>
+                        <ul class="learning-outcomes">
+                            <li>CPMK 3: Menjelaskan komponen antarmuka pengguna dan fitur utama HTML 5</li>
+                            <li>CPMK 4: Mengembangkan aplikasi web seluler berdasarkan HTML 5</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-section">
+                        <h4>Sub Topic</h4>
+                        <ul class="sub-topics">
+                            <li>HTTP</li>
+                            <li>JSON</li>
+                            <li>RESTFUL</li>
+                            <li>What is Web Service</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-sidebar">
+                    <div class="todo-card">
+                        <div class="todo-header">Things to do in this session</div>
+                        <ul class="todo-list">
+                            <li class="todo-item">
+                                <div class="todo-icon doc-icon">📄</div>
+                                <div class="todo-text">
+                                    <span class="todo-name">13 Web Service [L]</span>
+                                    <span class="todo-duration">• 10m</span>
+                                </div>
+                                <div class="download-icon">⬇️</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="todo-card" id="assignment-card" style="margin-top:16px;">
+                        <div class="todo-header">Pengumpulan Tugas</div>
+                        <form id="assignment-form" style="display:flex;flex-direction:column;gap:8px;padding:12px;">
+                            <input type="text" id="assignment-title" placeholder="Nama Tugas" required />
+                            <input type="file" id="assignment-file" required />
+                            <button class="btn btn-primary" type="submit">Kirim Tugas</button>
+                        </form>
+                        <ul id="assignment-list" style="padding:12px;list-style:none;margin:0;"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 RuangBelajar. Hak Cipta Terlindungi.</p>
+    </footer>
+    <script src="search.js"></script>
+    <script src="lms-features.js"></script>
+</body>
+
+</html>

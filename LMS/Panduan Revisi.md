@@ -1,0 +1,8 @@
+untuk bagian beranda ringkasan kelas nya dihapus aja, lalu untuk view things to do in session 10 nya itu aktifkan aja dan saat di klik nanti beralih ke page baru ringkasan kelas hari ini lebih detail (disitu ada file materi, deskripsi singkat materi, lalu di bawahnya ada aktivitas hari ini, lalu kalau ada kuis nanti muncul di bawahnya juga)
+masih dibagian beranda pengumuman terbaru nya diaktifkan aja yang nantinya kalau di klik itu muncul deskripsi lengkap pengumuman
+masih di beranda untuk tenggat waktu mendatang nya juga diaktifkan yang nantinya kalau klik muncul deskripsi singkat untuk tenggat waktu mendatang, lalu tanggal deadline, dan nama tugas
+untuk aktivitas terbaru nya sama ketika di klik nanti akan muncul ringkasan sesuai aktivitas 
+di bagian kursus saya di daftar pelajaran,aktifkan fitur detail nya lalu saat masuk kursus itu langsung masuk ke halaman materi, lalu fitur filter semua, sedang berlangsung dan selesai nya juga diaktifkan
+dibagian kalender nya buat kalendernya aktif mulai dari bulan hingga tanggal, dan ukuran kalendernya lebih kecil, dibagian nilai harus ada pilihan misalkan semester berapa di tahun ajaran berapa
+bagian page notifikasi, aktifkan fitur filter nya kaya belum dibaca, tugas, nilai, pengumuman, dan saat di klik lihat nanti itu muncul deskripsi lengkap sesuai filter, aktifkan juga fitur muat notifikasi lama
+di page bantuan aktifkan fitur accordion

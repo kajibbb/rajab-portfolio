@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RuangBelajar - Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #6366F1 0%, #6366F1 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: #FFFFFF;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(99, 102, 241, 0.2);
+            padding: 50px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            color: #6366F1;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #333333;
+            font-size: 16px;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .nav-item a {
+            flex: 1;
+            padding: 16px 20px;
+            background: #F5F7FA;
+            border: 2px solid #E0E8F0;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333333;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .nav-item a:hover {
+            background: #6366F1;
+            color: #FFFFFF;
+            border-color: #6366F1;
+            transform: translateX(5px);
+        }
+
+        .icon {
+            font-size: 24px;
+        }
+
+        .info-box {
+            background: #F5F7FA;
+            border-left: 4px solid #6366F1;
+            padding: 16px;
+            border-radius: 6px;
+            margin-top: 30px;
+            color: #333333;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #999;
+            font-size: 12px;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .nav-item a {
+                padding: 12px 16px;
+                font-size: 14px;
+            }
+
+            .icon {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>RuangBelajar</h1>
+            <p>Dashboard Pembelajaran Online</p>
+        </div>
+
+        <nav class="nav-list">
+            <div class="nav-item">
+                <a href="index.html">
+                    <span class="icon">HOME</span>
+                    <span>Beranda / Dashboard</span>
+                </a>
+            </div>
+
+            <div class="nav-item">
+                <a href="courses.html">
+                    <span class="icon">KURSUS</span>
+                    <span>Kursus & Mata Kuliah Saya</span>
+                </a>
+            </div>
+
+            <div class="nav-item">
+                <a href="notifications.html">
+                    <span class="icon">NOTIF</span>
+                    <span>Notifikasi & Lonceng</span>
+                </a>
+            </div>
+
+            <div class="nav-item">
+                <a href="profile.html">
+                    <span class="icon">PROFIL</span>
+                    <span>Profil & Pengaturan</span>
+                </a>
+            </div>
+
+            <div class="nav-item">
+                <a href="help.html">
+                    <span class="icon">BANTUAN</span>
+                    <span>Bantuan & Panduan</span>
+                </a>
+            </div>
+        </nav>
+
+        <div class="info-box">
+            <strong>Selamat Datang!</strong><br>
+            <br>
+            Dashboard RuangBelajar ini menyediakan akses lengkap ke semua fitur pembelajaran Anda. 
+            Pilih salah satu menu di atas untuk memulai.
+            <br><br>
+            Tip: Gunakan navigasi bar untuk berpindah antar halaman.
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 RuangBelajar. Hak Cipta Terlindungi.</p>
+        </div>
+    </div>
+</body>
+</html>

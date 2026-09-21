@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kursus Saya - RuangBelajar</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="courses.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <h1>RuangBelajar</h1>
+            </div>
+
+            <div class="navbar-center">
+                <ul class="nav-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="courses.html" class="active">Pelajaran</a></li>
+                    <li><a href="notifications.html">Notifikasi</a></li>
+                    <li><a href="help.html">Bantuan</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-right">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Cari materi, dokumen...">
+                    <button class="search-btn">Cari</button>
+                </div>
+
+                <div class="navbar-icons">
+                    <a href="profile.html" class="profile-icon" title="Profil">RS</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="courses-container">
+        <!-- Header Section -->
+        <section class="page-header">
+            <h2>Pelajaran</h2>
+            <p>Kelola daftar pelajaran, penjadwalan kelas, dan hasil nilai untuk SMP, SMA, dan sekolah umum.</p>
+        </section>
+
+        <!-- Tabs Navigation -->
+        <div class="tabs-container">
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="courses">Daftar Pelajaran</button>
+                <button class="tab-btn" data-tab="calendar">Kalender</button>
+                <button class="tab-btn" data-tab="grades">Nilai</button>
+            </div>
+        </div>
+
+        <!-- Courses Tab Content -->
+        <div id="courses" class="tab-content active">
+            <div class="filters">
+                <button class="filter-item active" data-filter="all">Semua (5)</button>
+                <button class="filter-item" data-filter="active">Sedang Berlangsung (4)</button>
+                <button class="filter-item" data-filter="completed">Selesai (1)</button>
+            </div>
+
+            <div class="courses-grid">
+                <!-- Course Card 1 -->
+                <div class="course-card" data-status="active">
+                    <div class="course-header">
+                        <h3>Pemrograman Web</h3>
+                        <span class="course-status active">Aktif</span>
+                    </div>
+                    <div class="course-details">
+                        <p><strong>Instruktur:</strong> Dr. Budi Santoso</p>
+                        <p><strong>Kelas:</strong> 9A (2025/2026)</p>
+                        <p><strong>Waktu Pelajar:</strong> 07:00-10:00</p>
+                    </div>
+                    <div class="course-progress">
+                        <span class="progress-label">Progres Belajar</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                        <span class="progress-text">75%</span>
+                    </div>
+                    <div class="course-actions">
+                        <button class="btn btn-primary" onclick="window.location.href=''">Masuk
+                            Kursus</button>
+                        <button class="btn btn-secondary"
+                            onclick="window.location.href='course-detail.html'">Detail</button>
+                        <button class="btn btn-secondary btn-chat" data-course="Pemrograman Web">Chat</button>
+                    </div>
+                </div>
+
+                <!-- Course Card 2 -->
+                <div class="course-card" data-status="active">
+                    <div class="course-header">
+                        <h3>Basis Data</h3>
+                        <span class="course-status active">Aktif</span>
+                    </div>
+                    <div class="course-details">
+                        <p><strong>Instruktur:</strong> Prof. Siti Nurhaliza</p>
+                        <p><strong>Semester:</strong> 9A (2025/2026)</p>
+                        <p><strong>Waktu Pelajaran:</strong> 10:00-13:00</p>
+                    </div>
+                    <div class="course-progress">
+                        <span class="progress-label">Progres Belajar</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 60%"></div>
+                        </div>
+                        <span class="progress-text">60%</span>
+                    </div>
+                    <div class="course-actions">
+                        <button class="btn btn-primary" onclick="window.location.href=''">Masuk
+                            Kursus</button>
+                        <button class="btn btn-secondary" onclick="window.location.href=''">Detail</button>
+                        <button class="btn btn-secondary btn-chat" data-course="Basis Data">Chat</button>
+                    </div>
+                </div>
+
+                <!-- Course Card 3 -->
+                <div class="course-card" data-status="active">
+                    <div class="course-header">
+                        <h3>Struktur Data & Algoritma</h3>
+                        <span class="course-status active">Aktif</span>
+                    </div>
+                    <div class="course-details">
+                        <p><strong>Instruktur:</strong> Dr. Ahmad Ridho</p>
+                        <p><strong>Semester:</strong> 9A (2025/2026)</p>
+                        <p><strong>Waktu Pelajaran:</strong> 07:00-10:00</p>
+                    </div>
+                    <div class="course-progress">
+                        <span class="progress-label">Progres Belajar</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%"></div>
+                        </div>
+                        <span class="progress-text">85%</span>
+                    </div>
+                    <div class="course-actions">
+                        <button class="btn btn-primary" onclick="window.location.href=''">Masuk
+                            Kursus</button>
+                        <button class="btn btn-secondary" onclick="window.location.href=''">Detail</button>
+                        <button class="btn btn-secondary btn-chat" data-course="Struktur Data & Algoritma">Chat</button>
+                    </div>
+                </div>
+
+                <!-- Course Card 4 -->
+                <div class="course-card" data-status="active">
+                    <div class="course-header">
+                        <h3>Sistem Operasi</h3>
+                        <span class="course-status active">Aktif</span>
+                    </div>
+                    <div class="course-details">
+                        <p><strong>Instruktur:</strong> Dr. Rini Setiawan</p>
+                        <p><strong>Semester:</strong> 9A (2025/2026)</p>
+                        <p><strong>Waktu Pelajaran:</strong> 10:00-13:00</p>
+                    </div>
+                    <div class="course-progress">
+                        <span class="progress-label">Progres Belajar</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 50%"></div>
+                        </div>
+                        <span class="progress-text">50%</span>
+                    </div>
+                    <div class="course-actions">
+                        <button class="btn btn-primary" onclick="window.location.href=''">Masuk
+                            Kursus</button>
+                        <button class="btn btn-secondary" onclick="window.location.href=''">Detail</button>
+                        <button class="btn btn-secondary btn-chat" data-course="Sistem Operasi">Chat</button>
+                    </div>
+                </div>
+
+                <!-- Course Card 5 -->
+                <div class="course-card" data-status="completed">
+                    <div class="course-header">
+                        <h3>Jaringan Komputer</h3>
+                        <span class="course-status completed">Selesai</span>
+                    </div>
+                    <div class="course-details">
+                        <p><strong>Instruktur:</strong> Prof. Eka Putra</p>
+                        <p><strong>Semester:</strong> 9A (2024/2025)</p>
+                        <p><strong>Waktu Pelajaran:</strong> 07:00-10:00</p>
+                    </div>
+                    <div class="course-progress">
+                        <span class="progress-label">Progres Belajar</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%"></div>
+                        </div>
+                        <span class="progress-text">100%</span>
+                    </div>
+                    <div class="course-actions">
+                        <button class="btn btn-primary" onclick="window.location.href=''">Masuk
+                            Kursus</button>
+                        <button class="btn btn-secondary" onclick="window.location.href=''">Detail</button>
+                        <button class="btn btn-secondary btn-chat" data-course="Jaringan Komputer">Chat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Calendar Tab Content -->
+        <div id="calendar" class="tab-content">
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <select id="calendar-month">
+                        <option value="0">Januari</option>
+                        <option value="1">Februari</option>
+                        <option value="2">Maret</option>
+                        <option value="3">April</option>
+                        <option value="4" selected>Mei</option>
+                        <option value="5">Juni</option>
+                        <option value="6">Juli</option>
+                        <option value="7">Agustus</option>
+                        <option value="8">September</option>
+                        <option value="9">Oktober</option>
+                        <option value="10">November</option>
+                        <option value="11">Desember</option>
+                    </select>
+                    <select id="calendar-year">
+                        <option value="2025">2025</option>
+                        <option value="2026" selected>2026</option>
+                        <option value="2027">2027</option>
+                    </select>
+                </div>
+
+                <div class="calendar-wrapper">
+                    <table class="calendar-vertical-table">
+                        <tbody>
+                            <tr>
+                                <th rowspan="7" class="month-indicator">MEI</th>
+                                <th>Sen</th>
+                                <td class="empty"></td>
+                                <td>4</td>
+                                <td>11</td>
+                                <td>18</td>
+                                <td class="event">25</td>
+                            </tr>
+                            <tr>
+                                <th>Sel</th>
+                                <td class="empty"></td>
+                                <td>5</td>
+                                <td>12</td>
+                                <td>19</td>
+                                <td>26</td>
+                            </tr>
+                            <tr>
+                                <th>Rab</th>
+                                <td class="empty"></td>
+                                <td>6</td>
+                                <td>13</td>
+                                <td class="today-cell">20</td>
+                                <td>27</td>
+                            </tr>
+                            <tr>
+                                <th>Kam</th>
+                                <td class="empty"></td>
+                                <td>7</td>
+                                <td>14</td>
+                                <td class="event">21</td>
+                                <td>28</td>
+                            </tr>
+                            <tr>
+                                <th>Jum</th>
+                                <td>1</td>
+                                <td>8</td>
+                                <td>15</td>
+                                <td>22</td>
+                                <td class="event">29</td>
+                            </tr>
+                            <tr>
+                                <th>Sab</th>
+                                <td>2</td>
+                                <td>9</td>
+                                <td>16</td>
+                                <td>23</td>
+                                <td class="event">30</td>
+                            </tr>
+                            <tr>
+                                <th>Min</th>
+                                <td>3</td>
+                                <td>10</td>
+                                <td>17</td>
+                                <td class="event">24</td>
+                                <td>31</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="calendar-legend">
+                    <h4>Jadwal Penting</h4>
+                    <ul class="events-list">
+                        <li>
+                            <span class="event-date">21 Mei</span>
+                            <span class="event-desc">Tenggat Tugas Algoritma</span>
+                        </li>
+                        <li>
+                            <span class="event-date">24 Mei</span>
+                            <span class="event-desc">Ujian Midterm Basis Data</span>
+                        </li>
+                        <li>
+                            <span class="event-date">25 Mei</span>
+                            <span class="event-desc">Pertemuan Kelas Pemrograman Web</span>
+                        </li>
+                        <li>
+                            <span class="event-date">29 Mei</span>
+                            <span class="event-desc">Essay Pemrograman Deadline</span>
+                        </li>
+                        <li>
+                            <span class="event-date">30 Mei</span>
+                            <span class="event-desc">Proyek Basis Data Deadline</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grades Tab Content -->
+        <div id="grades" class="tab-content">
+            <section class="grade-card">
+                <div class="grades-header-flex">
+                    <div>
+                        <h3>Hasil Nilai Semester</h3>
+                        <p>Nilai mata pelajaran Anda per semester dilihat secara ringkas dengan rincian tugas, UTS, dan
+                            UAS.</p>
+                    </div>
+                    <div class="grades-filter">
+                        <select class="form-select">
+                            <option>Semester 1</option>
+                            <option>Semester 2</option>
+                            <option>Semester 3</option>
+                            <option selected>Semester 4</option>
+                            <option>Semester 5</option>
+                            <option>Semester 6</option>
+                        </select>
+                        <select class="form-select">
+                            <option>2023/2024</option>
+                            <option>2024/2025</option>
+                            <option selected>2025/2026</option>
+                        </select>
+                    </div>
+                </div>
+                <table class="grades-table">
+                    <thead>
+                        <tr>
+                            <th>Mata Pelajaran</th>
+                            <th>Tugas<br><small>20%</small></th>
+                            <th>UTS<br><small>20%</small></th>
+                            <th>UAS<br><small>50%</small></th>
+                            <th>Nilai Akhir</th>
+                            <th>Predikat</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pemrograman Web</td>
+                            <td>85</td>
+                            <td>88</td>
+                            <td>90</td>
+                            <td>88</td>
+                            <td>A</td>
+                            <td>Baik</td>
+                        </tr>
+                        <tr>
+                            <td>Basis Data</td>
+                            <td>80</td>
+                            <td>82</td>
+                            <td>84</td>
+                            <td>82</td>
+                            <td>B+</td>
+                            <td>Baik</td>
+                        </tr>
+                        <tr>
+                            <td>Struktur Data</td>
+                            <td>92</td>
+                            <td>90</td>
+                            <td>88</td>
+                            <td>90</td>
+                            <td>A</td>
+                            <td>Istimewa</td>
+                        </tr>
+                        <tr>
+                            <td>Sistem Operasi</td>
+                            <td>74</td>
+                            <td>80</td>
+                            <td>78</td>
+                            <td>78</td>
+                            <td>B</td>
+                            <td>Cukup</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 RuangBelajar. Hak Cipta Terlindungi.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.tab-btn').forEach(function (button) {
+            button.addEventListener('click', function () {
+                var activeTab = this.dataset.tab;
+                document.querySelectorAll('.tab-btn').forEach(function (btn) {
+                    btn.classList.toggle('active', btn === button);
+                });
+                document.querySelectorAll('.tab-content').forEach(function (content) {
+                    content.classList.toggle('active', content.id === activeTab);
+                });
+            });
+        });
+
+        // Filters for courses
+        const filterBtns = document.querySelectorAll('.filter-item');
+        const courseCards = document.querySelectorAll('.course-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filterValue = btn.getAttribute('data-filter');
+
+                courseCards.forEach(card => {
+                    if (filterValue === 'all') {
+                        card.style.display = 'flex';
+                    } else {
+                        if (card.getAttribute('data-status') === filterValue) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="lms-features.js"></script>
+    <script src="search.js"></script>
+</body>
+
+</html>

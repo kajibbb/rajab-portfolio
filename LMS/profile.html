@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil & Pengaturan - RuangBelajar</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <h1>RuangBelajar</h1>
+            </div>
+
+            <div class="navbar-center">
+                <ul class="nav-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="courses.html">Pelajaran</a></li>
+                    <li><a href="notifications.html">Notifikasi</a></li>
+                    <li><a href="help.html">Bantuan</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-right">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Cari materi, dokumen...">
+                    <button class="search-btn">Cari</button>
+                </div>
+
+                <div class="navbar-icons">
+                    <a href="profile.html" class="profile-icon active" title="Profil">RS</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="profile-container">
+        <!-- Profile Header -->
+        <section class="profile-header">
+            <div class="profile-card">
+                <div class="profile-picture-container">
+                    <div class="profile-picture">RS</div>
+                    <button class="upload-btn">Ubah Foto</button>
+                </div>
+
+                <div class="profile-info">
+                    <h2>Rina Susanti</h2>
+                    <p class="student-id">NISN: 2024001234</p>
+                    <p class="role">Siswa Aktif - Teknik Komputer Dan Jaringan</p>
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <span class="stat-value">5</span>
+                            <span class="stat-label">Mata Pelajaran Aktif</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">3.85</span>
+                            <span class="stat-label">Rata-Rata Nilai</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">98%</span>
+                            <span class="stat-label">Kehadiran</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Settings Tabs -->
+        <div class="settings-tabs">
+            <button class="tab-btn active" data-tab="personal">Data Pribadi</button>
+            <button class="tab-btn" data-tab="preferences">Preferensi</button>
+            <button class="tab-btn" data-tab="security">Keamanan</button>
+        </div>
+
+        <!-- Tab Contents -->
+        <div class="settings-content">
+            <!-- Personal Info Tab -->
+            <div id="personal" class="tab-content active">
+                <div class="settings-card">
+                    <h3>Informasi Pribadi</h3>
+                    <form class="settings-form">
+                        <div class="form-group">
+                            <label for="fullname">Nama Lengkap</label>
+                            <input type="text" id="fullname" value="Rina Susanti">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" value="rina.susanti@student.edu">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Nomor Telepon</label>
+                            <input type="tel" id="phone" value="+62 812-3456-7890">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Alamat</label>
+                            <textarea id="address" rows="3">Jalan Merdeka No. 123, Jakarta Timur</textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="birthdate">Tanggal Lahir</label>
+                                <input type="date" id="birthdate" value="2005-03-15">
+                            </div>
+                            <div class="form-group">
+                                <label for="gender">Jenis Kelamin</label>
+                                <select id="gender">
+                                    <option selected>Perempuan</option>
+                                    <option>Laki-laki</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+                            <button type="reset" class="btn btn-secondary">Batal</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Preferences Tab -->
+            <div id="preferences" class="tab-content">
+                <div class="settings-card">
+                    <h3>Preferensi Pengguna</h3>
+                    <form class="settings-form">
+                        <div class="form-group">
+                            <label for="language">Bahasa</label>
+                            <select id="language">
+                                <option selected>Bahasa Indonesia</option>
+                                <option>English</option>
+                                <option>Español</option>
+                                <option>Français</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="timezone">Zona Waktu</label>
+                            <select id="timezone">
+                                <option selected>Asia/Jakarta (GMT+7)</option>
+                                <option>Asia/Bangkok (GMT+7)</option>
+                                <option>Asia/Singapore (GMT+8)</option>
+                                <option>Asia/Manila (GMT+8)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="theme">Tema Tampilan</label>
+                            <select id="theme">
+                                <option selected>Terang (Light)</option>
+                                <option>Gelap (Dark)</option>
+                                <option>Otomatis</option>
+                            </select>
+                        </div>
+
+                        <div class="settings-divider"></div>
+
+                        <h4>Notifikasi Email</h4>
+
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" checked>
+                                <span>Notifikasi Tugas Baru</span>
+                            </label>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" checked>
+                                <span>Pemberitahuan Nilai</span>
+                            </label>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" checked>
+                                <span>Pengumuman Penting</span>
+                            </label>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox">
+                                <span>Update Komunitas</span>
+                            </label>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Simpan Preferensi</button>
+                            <button type="reset" class="btn btn-secondary">Batal</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Security Tab -->
+            <div id="security" class="tab-content">
+                <div class="settings-card">
+                    <h3>Keamanan Akun</h3>
+
+                    <div class="security-section">
+                        <h4>Ubah Kata Sandi</h4>
+                        <form class="settings-form">
+                            <div class="form-group">
+                                <label for="oldpass">Kata Sandi Lama</label>
+                                <input type="password" id="oldpass" placeholder="Masukkan kata sandi lama">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="newpass">Kata Sandi Baru</label>
+                                <input type="password" id="newpass" placeholder="Masukkan kata sandi baru">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="confirmpass">Konfirmasi Kata Sandi Baru</label>
+                                <input type="password" id="confirmpass" placeholder="Konfirmasi kata sandi baru">
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">Ubah Kata Sandi</button>
+                                <button type="reset" class="btn btn-secondary">Batal</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="security-section">
+                        <h4>Sesi Aktif</h4>
+                        <div class="session-info">
+                            <div class="session-item">
+                                <div class="session-details">
+                                    <p><strong>Perangkat:</strong> Chrome - Windows</p>
+                                    <p><strong>Lokasi:</strong> Jakarta, Indonesia</p>
+                                    <p><strong>Login:</strong> 2 hari yang lalu</p>
+                                </div>
+                                <button class="btn btn-logout">Logout</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="security-section">
+                        <h4>Aktivitas Akun</h4>
+                        <div class="activity-log">
+                            <div class="activity-item">
+                                <span class="activity-time">Hari ini, 15:30</span>
+                                <span class="activity-desc">Login berhasil</span>
+                            </div>
+                            <div class="activity-item">
+                                <span class="activity-time">Kemarin, 10:15</span>
+                                <span class="activity-desc">Mengubah foto profil</span>
+                            </div>
+                            <div class="activity-item">
+                                <span class="activity-time">2 hari lalu, 09:45</span>
+                                <span class="activity-desc">Logout</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Logout Button -->
+        <div class="logout-section">
+            <button class="btn btn-logout-main">Keluar dari Akun</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 RuangBelajar. Hak Cipta Terlindungi.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Tab switching
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    btn.classList.add('active');
+                    document.getElementById(btn.getAttribute('data-tab')).classList.add('active');
+                });
+            });
+
+            // Toast setup
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            document.body.appendChild(toast);
+
+            function showToast(message, isError = false) {
+                toast.textContent = message;
+                toast.style.background = isError ? 'var(--danger-color)' : 'var(--dark-blue)';
+                toast.classList.add('show');
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 3000);
+            }
+
+            // Form submission (Simpan Perubahan)
+            const forms = document.querySelectorAll('.settings-form');
+            forms.forEach(form => {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+
+                    // Simple password check for security tab
+                    const newPass = form.querySelector('#newpass');
+                    const confirmPass = form.querySelector('#confirmpass');
+                    if (newPass && confirmPass && newPass.value !== confirmPass.value) {
+                        showToast('Kata sandi baru tidak cocok!', true);
+                        return;
+                    }
+
+                    showToast('Perubahan berhasil disimpan!');
+                });
+            });
+
+        });
+    </script>
+    <script src="search.js"></script>
+</body>
+
+</html>

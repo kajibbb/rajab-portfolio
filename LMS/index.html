@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard RuangBelajar - Beranda</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <h1>RuangBelajar</h1>
+            </div>
+
+            <div class="navbar-center">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Beranda</a></li>
+                    <li><a href="courses.html">Pelajaran</a></li>
+                    <li><a href="notifications.html">Notifikasi</a></li>
+                    <li><a href="help.html">Bantuan</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-right">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Cari materi, dokumen...">
+                    <button class="search-btn">Cari</button>
+                </div>
+
+                <div class="navbar-icons">
+                    <a href="profile.html" class="profile-icon" title="Profil">RS</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="dashboard-container">
+        <!-- Header Section -->
+        <section class="welcome-section">
+            <div class="welcome-content">
+                <h2>Selamat Datang di RuangBelajar</h2>
+                <p>RuangBelajar sekarang dirancang untuk sekolah SMP/SMA dan lingkungan pendidikan umum, bukan hanya
+                    persekolahan.</p>
+            </div>
+        </section>
+
+        <!-- Ongoing Class -->
+        <section class="card ongoing-class-card">
+            <div class="ongoing-header">
+                <span class="session-label">Onsite Class</span>
+                <span class="session-duration">50 m</span>
+            </div>
+            <div class="ongoing-body">
+                <h3>9A - LAB</h3>
+                <p class="ongoing-subject">Pemrograman Web</p>
+
+                <ul class="ongoing-details">
+                    <li> Dr. Budi Santoso</li>
+                    <li> Kelas 9A - SMP Ruang Belajar</li>
+                    <li> 07:00 - 10:00 GMT+7</li>
+                </ul>
+
+                <a href="course-detail.html" class="dashboard-btn">View things to do in session 10</a>
+                <button class="dashboard-btn" id="btn-absen-scan">Absen (Scan Kartu)</button>
+
+                <div class="progress-container">
+                    <div class="progress-meta">
+                        <span>Course Progress</span>
+                        <span>40%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 40%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Grid -->
+        <div class="content-grid">
+            <!-- Pengumuman Terbaru -->
+            <section class="card">
+                <h3>Pengumuman Terbaru</h3>
+                <div class="card-content">
+                    <ul class="announcement-list">
+                        <li class="accordion-item">
+                            <div class="accordion-header">
+                                <div>
+                                    <span class="date">20 Mei 2026</span>
+                                    <p>Perubahan jadwal sekolah minggu depan</p>
+                                </div>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Jadwal sekolah minggu depan akan mengalami perubahan dikarenakan adanya rapat guru
+                                    untuk persiapan akreditasi. Harap perhatikan jadwal baru yang akan segera
+                                    dipublikasikan di sistem. Pastikan untuk mengecek notifikasi Anda secara berkala.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="accordion-item">
+                            <div class="accordion-header">
+                                <div>
+                                    <span class="date">18 Mei 2026</span>
+                                    <p>Hasil UTS telah dipublikasikan</p>
+                                </div>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Hasil Ujian Tengah Semester (UTS) untuk semua mata pelajaran telah resmi
+                                    dipublikasikan. Silakan cek bagian nilai pada masing-masing kursus untuk melihat
+                                    detail nilai Anda.</p>
+                            </div>
+                        </li>
+                        <li class="accordion-item">
+                            <div class="accordion-header">
+                                <div>
+                                    <span class="date">15 Mei 2026</span>
+                                    <p>Materi baru ditambahkan di Kursus Basis Data</p>
+                                </div>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Modul pembelajaran baru mengenai Normalisasi Database (Bentuk Normal ke-3) telah
+                                    ditambahkan di Kursus Basis Data. Silakan pelajari materi ini sebelum sesi praktikum
+                                    minggu depan.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Aktivitas Terbaru -->
+            <section class="card">
+                <h3>Aktivitas Terbaru</h3>
+                <div class="card-content">
+                    <ul class="activity-list">
+                        <li class="accordion-item">
+                            <div class="accordion-header">
+                                <div>
+                                    <span class="activity-type">Tugas Dikumpulkan</span>
+                                    <p>Pemrograman Web - Tugas 5</p>
+                                    <span class="time">2 jam yang lalu</span>
+                                </div>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Anda telah berhasil mengumpulkan "Tugas 5 - Desain Antarmuka Login" pada mata
+                                    pelajaran Pemrograman Web. Status saat ini: Menunggu Penilaian guru.</p>
+                            </div>
+                        </li>
+                        <li class="accordion-item">
+                            <div class="accordion-header">
+                                <div>
+                                    <span class="activity-type">Nilai Dirilis</span>
+                                    <p>Basis Data - Quiz 3</p>
+                                    <span class="time">1 hari yang lalu</span>
+                                </div>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Nilai untuk Quiz 3 mata pelajaran Basis Data telah dirilis. Anda mendapatkan nilai
+                                    85/100. Klik pada notifikasi nilai untuk melihat feedback dari guru.</p>
+                            </div>
+                        </li>
+                        <li class="accordion-item">
+                            <div class="accordion-header">
+                                <div>
+                                    <span class="activity-type">Forum Dibalas</span>
+                                    <p>Diskusi Struktur Data</p>
+                                    <span class="time">3 hari yang lalu</span>
+                                </div>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Dr. Budi Santoso telah membalas pertanyaan Anda mengenai "Implementasi Binary Search
+                                    Tree" di forum diskusi Struktur Data.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Tenggat Waktu Mendatang -->
+            <section class="card">
+                <h3>Tenggat Waktu Mendatang</h3>
+                <div class="card-content">
+                    <ul class="deadline-list">
+                        <li class="accordion-item urgent">
+                            <div class="accordion-header">
+                                <div>
+                                    <span class="urgency">SEGERA</span>
+                                    <p>Tugas Algoritma - 21 Mei 2026</p>
+                                </div>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content">
+                                <p><strong>Nama Tugas:</strong> Tugas Algoritma<br>
+                                    <strong>Tanggal Deadline:</strong> 21 Mei 2026, 23:59 GMT+7<br>
+                                    <strong>Deskripsi Singkat:</strong> Implementasikan algoritma pencarian jalur
+                                    terpendek menggunakan bahasa Python dan lampirkan laporannya.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="accordion-item normal">
+                            <div class="accordion-header">
+                                <div>
+                                    <span class="urgency">NORMAL</span>
+                                    <p>Essay Pemrograman - 25 Mei 2026</p>
+                                </div>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content">
+                                <p><strong>Nama Tugas:</strong> Essay Pemrograman<br>
+                                    <strong>Tanggal Deadline:</strong> 25 Mei 2026, 17:00 GMT+7<br>
+                                    <strong>Deskripsi Singkat:</strong> Tulis essay minimal 500 kata mengenai dampak
+                                    pemrograman berorientasi objek dalam rekayasa perangkat lunak modern.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="accordion-item normal">
+                            <div class="accordion-header">
+                                <div>
+                                    <span class="urgency">NORMAL</span>
+                                    <p>Proyek Basis Data - 30 Mei 2026</p>
+                                </div>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content">
+                                <p><strong>Nama Tugas:</strong> Proyek Basis Data<br>
+                                    <strong>Tanggal Deadline:</strong> 30 Mei 2026, 23:59 GMT+7<br>
+                                    <strong>Deskripsi Singkat:</strong> Kumpulkan diagram Entity-Relationship (ERD)
+                                    beserta script SQL untuk pembuatan tabel dari studi kasus perpustakaan.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 RuangBelajar. Hak Cipta Terlindungi.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    const item = header.closest('.accordion-item');
+                    const isActive = item.classList.contains('active');
+
+                    // Close all accordion items
+                    document.querySelectorAll('.accordion-item').forEach(acc => {
+                        acc.classList.remove('active');
+                    });
+
+                    // If it wasn't active, open it
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+    <!-- QR scanning library for absen (used only on Beranda) -->
+    <script src="https://cdn.jsdelivr.net/npm/jsqr/dist/jsQR.js"></script>
+    <script src="lms-features.js"></script>
+    <script src="search.js"></script>
+</body>
+
+</html>

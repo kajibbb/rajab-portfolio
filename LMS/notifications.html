@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifikasi - RuangBelajar</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="notifications.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <h1>RuangBelajar</h1>
+            </div>
+
+            <div class="navbar-center">
+                <ul class="nav-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="courses.html">Pelajaran</a></li>
+                    <li><a href="notifications.html" class="active">Notifikasi</a></li>
+                    <li><a href="help.html">Bantuan</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-right">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Cari materi, dokumen...">
+                    <button class="search-btn">Cari</button>
+                </div>
+
+                <div class="navbar-icons">
+                    <a href="profile.html" class="profile-icon" title="Profil">RS</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="notifications-container">
+        <!-- Header Section -->
+        <section class="page-header">
+            <h2>Notifikasi</h2>
+            <p>Pantau pembaruan, pengumuman, dan aktivitas penting Anda</p>
+        </section>
+
+        <!-- Filter Buttons -->
+        <div class="notification-filters">
+            <button class="filter-btn active" data-filter="semua">Semua (10)</button>
+            <button class="filter-btn" data-filter="unread">Belum Dibaca (4)</button>
+            <button class="filter-btn" data-filter="tugas">Tugas (4)</button>
+            <button class="filter-btn" data-filter="nilai">Nilai (2)</button>
+            <button class="filter-btn" data-filter="pengumuman">Pengumuman (4)</button>
+        </div>
+
+        <!-- Notification List -->
+        <div class="notifications-list">
+            <!-- Unread Notifications -->
+            <div class="notification unread" data-category="tugas">
+                <div class="notification-icon">●</div>
+                <div class="notification-content">
+                    <h4>Tugas Baru: Pemrograman Web</h4>
+                    <p>Tugas baru telah ditambahkan untuk mata kuliah Pemrograman Web. Tenggat waktu: 25 Mei 2026.</p>
+                    <span class="notification-time">5 menit yang lalu</span>
+                </div>
+                <div class="notification-actions">
+                    <button class="action-btn">Lihat</button>
+                </div>
+                <div class="notification-detail">
+                    Pastikan Anda membaca panduan tugas sebelum mengumpulkan. Tugas ini memiliki bobot 15% dari nilai
+                    akhir semester. Kumpulkan dalam format ZIP melalui portal tugas.
+                </div>
+            </div>
+
+            <div class="notification unread" data-category="nilai">
+                <div class="notification-icon">●</div>
+                <div class="notification-content">
+                    <h4>Nilai Dirilis: Basis Data Quiz 3</h4>
+                    <p>Nilai Anda untuk Quiz 3 Basis Data telah dirilis. Nilai: 92/100 (A).</p>
+                    <span class="notification-time">2 jam yang lalu</span>
+                </div>
+                <div class="notification-actions">
+                    <button class="action-btn">Lihat</button>
+                </div>
+                <div class="notification-detail">
+                    Rincian penilaian: Pilihan Ganda 40/40, Essay 52/60. Anda dapat melihat feedback dari dosen pada
+                    halaman detail kuis. Pertahankan hasil yang baik ini.
+                </div>
+            </div>
+
+            <div class="notification unread" data-category="pengumuman">
+                <div class="notification-icon">●</div>
+                <div class="notification-content">
+                    <h4>Pengumuman Penting dari Sistem</h4>
+                    <p>Penjadwalan ulang untuk UTS minggu depan telah diumumkan. Silakan periksa kalender Anda.</p>
+                    <span class="notification-time">4 jam yang lalu</span>
+                </div>
+                <div class="notification-actions">
+                    <button class="action-btn">Lihat</button>
+                </div>
+                <div class="notification-detail">
+                    Ujian Tengah Semester yang semula dijadwalkan pada hari Senin diundur menjadi hari Kamis pukul 13.00
+                    WIB. Ruangan tetap sama di Lab A.
+                </div>
+            </div>
+
+            <div class="notification unread" data-category="pengumuman">
+                <div class="notification-icon">●</div>
+                <div class="notification-content">
+                    <h4>Jawaban untuk Pertanyaan Forum Anda</h4>
+                    <p>Instruktur telah membalas pertanyaan Anda di forum Struktur Data. Baca balasan lengkapnya.</p>
+                    <span class="notification-time">6 jam yang lalu</span>
+                </div>
+                <div class="notification-actions">
+                    <button class="action-btn">Lihat</button>
+                </div>
+                <div class="notification-detail">
+                    Instruktur Dr. Ahmad Ridho telah memberikan pencerahan mengenai algoritma BFS dan DFS. Silakan
+                    tanggapi jika masih ada yang kurang jelas.
+                </div>
+            </div>
+
+            <!-- Read Notifications -->
+            <div class="notification read" data-category="pengumuman">
+                <div class="notification-icon">●</div>
+                <div class="notification-content">
+                    <h4>Materi Baru: Basis Data - Normalisasi</h4>
+                    <p>Materi terbaru tentang normalisasi database telah tersedia di bagian materi Basis Data.</p>
+                    <span class="notification-time">1 hari yang lalu</span>
+                </div>
+                <div class="notification-actions">
+                    <button class="action-btn">Lihat</button>
+                </div>
+                <div class="notification-detail">
+                    Materi normalisasi mencakup 1NF, 2NF, 3NF dan BCNF beserta contoh studi kasus aplikasi e-commerce.
+                    Disarankan untuk membaca sebelum sesi praktikum.
+                </div>
+            </div>
+
+            <div class="notification read" data-category="tugas">
+                <div class="notification-icon">●</div>
+                <div class="notification-content">
+                    <h4>Tugas Dikumpulkan: Algoritma Sorting</h4>
+                    <p>Tugas Anda untuk "Implementasi Algoritma Sorting" telah berhasil dikumpulkan.</p>
+                    <span class="notification-time">2 hari yang lalu</span>
+                </div>
+                <div class="notification-actions">
+                    <button class="action-btn">Lihat</button>
+                </div>
+                <div class="notification-detail">
+                    Sistem telah mencatat waktu pengumpulan pada 24 Mei 2026 pukul 23:15 WIB. File terlampir:
+                    tugas_sorting_123.zip.
+                </div>
+            </div>
+
+            <div class="notification read" data-category="tugas">
+                <div class="notification-icon">●</div>
+                <div class="notification-content">
+                    <h4>Pengingat Deadline: Proyek Web Development</h4>
+                    <p>Proyek Web Development Anda akan jatuh tempo dalam 3 hari (28 Mei 2026).</p>
+                    <span class="notification-time">3 hari yang lalu</span>
+                </div>
+                <div class="notification-actions">
+                    <button class="action-btn">Lihat</button>
+                </div>
+                <div class="notification-detail">
+                    Tugas akhir web development Anda memerlukan presentasi live dan pengumpulan kode sumber. Pastikan
+                    hosting sudah berjalan dengan baik.
+                </div>
+            </div>
+
+            <div class="notification read" data-category="pengumuman">
+                <div class="notification-icon">●</div>
+                <div class="notification-content">
+                    <h4>Anggota Grup Bergabung</h4>
+                    <p>Ahmad Ridho telah bergabung dengan grup proyek Anda untuk mata kuliah Struktur Data.</p>
+                    <span class="notification-time">5 hari yang lalu</span>
+                </div>
+                <div class="notification-actions">
+                    <button class="action-btn">Lihat</button>
+                </div>
+                <div class="notification-detail">
+                    Anda kini berada di Grup 4 bersama Ahmad Ridho, Siti Aisyah, dan Budi Santoso. Segera diskusikan
+                    pembagian tugas proyek kelompok.
+                </div>
+            </div>
+
+            <div class="notification read" data-category="nilai">
+                <div class="notification-icon">●</div>
+                <div class="notification-content">
+                    <h4>Laporan Nilai Semester Tersedia</h4>
+                    <p>Laporan nilai semester Anda telah siap untuk dilihat. Akses melalui bagian Nilai.</p>
+                    <span class="notification-time">1 minggu yang lalu</span>
+                </div>
+                <div class="notification-actions">
+                    <button class="action-btn">Lihat</button>
+                </div>
+                <div class="notification-detail">
+                    IPK semester ini telah diperbarui. Silakan cetak Kartu Hasil Studi (KHS) jika diperlukan untuk
+                    administrasi akademik.
+                </div>
+            </div>
+
+            <div class="notification read" data-category="pengumuman">
+                <div class="notification-icon">●</div>
+                <div class="notification-content">
+                    <h4>Perubahan Jadwal Kuliah</h4>
+                    <p>Jadwal kuliah untuk Pemrograman Web telah berubah menjadi Rabu, 15:00-17:00.</p>
+                    <span class="notification-time">1 minggu yang lalu</span>
+                </div>
+                <div class="notification-actions">
+                    <button class="action-btn">Lihat</button>
+                </div>
+                <div class="notification-detail">
+                    Sesi pengganti mata kuliah Pemrograman Web ini akan menggantikan sesi yang kosong minggu lalu.
+                    Diharapkan kehadiran tepat waktu.
+                </div>
+            </div>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="load-more-section">
+            <button class="load-more-btn">Muat Notifikasi Lebih Lama</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 RuangBelajar. Hak Cipta Terlindungi.</p>
+    </footer>
+    <script>
+        // Fitur Filter Notifikasi
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const notifications = document.querySelectorAll('.notification');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active state di tombol
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filterType = btn.getAttribute('data-filter');
+
+                notifications.forEach(item => {
+                    if (filterType === 'semua') {
+                        item.style.display = 'flex';
+                    } else if (filterType === 'unread') {
+                        item.style.display = item.classList.contains('unread') ? 'flex' : 'none';
+                    } else {
+                        item.style.display = item.getAttribute('data-category') === filterType ? 'flex' : 'none';
+                    }
+                });
+            });
+        });
+
+        // Fitur Detail (Lihat) Notifikasi
+        const actionBtns = document.querySelectorAll('.action-btn');
+        actionBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                const parent = this.closest('.notification');
+                const detail = parent.querySelector('.notification-detail');
+
+                if (detail) {
+                    const isActive = detail.classList.contains('active');
+                    if (isActive) {
+                        detail.classList.remove('active');
+                        this.textContent = 'Lihat';
+                    } else {
+                        detail.classList.add('active');
+                        this.textContent = 'Tutup';
+
+                        // Menandai sebagai dibaca saat dibuka (opsional)
+                        if (parent.classList.contains('unread')) {
+                            parent.classList.remove('unread');
+                            parent.classList.add('read');
+                        }
+                    }
+                }
+            });
+        });
+
+        // Fitur Muat Notifikasi Lebih Lama
+        const loadMoreBtn = document.querySelector('.load-more-btn');
+        loadMoreBtn.addEventListener('click', function () {
+            const originalText = this.textContent;
+            this.textContent = 'Memuat...';
+            this.style.opacity = '0.7';
+
+            // Simulasi proses asinkron muat data
+            setTimeout(() => {
+                alert('Tidak ada notifikasi lama lagi yang tersedia saat ini.');
+                this.textContent = originalText;
+                this.style.opacity = '1';
+            }, 800);
+        });
+    </script>
+    <script src="search.js"></script>
+</body>
+
+</html>
